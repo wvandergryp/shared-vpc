@@ -1,7 +1,7 @@
 # The ID of the controller project. Set this to your GCP project ID.
 variable "project_id" {
   description = "The ID of the controller project"
-  default     = "<PROJECT_ID>"
+  default     = "gcppanorama"
 }
 
 # A suffix to append to project names. Set this to any string you want to use as a suffix.
@@ -25,31 +25,31 @@ variable "create_vm_2" {
 # The name of the host project. Set this to your host project's name.
 variable "host_project_name" {
   description = "The name of the host project"
-  default = "<HOST_PROJECT_NAME>"
+  default = "hostproject"
 }
 
 # The ID of the first service project. Set this to your first service project's ID.
 variable "service_project_1_name" {
   description = "The ID of the first service project"
-  default = "<SERVICE_PROJECT_1_NAME>"
+  default = "serviceproj01"
 }
 
 # The ID of the second service project. Set this to your second service project's ID.
 variable "service_project_2_name" {
   description = "The ID of the second service project"
-  default = "<SERVICE_PROJECT_2_NAME>"
+  default = "serviceproj02"
 }
 
 # Billing account ID. Set this to your GCP billing account ID.
 variable "billing_account_id" {
   description = "Billing account ID"
-  default = "<BILLING_ACCOUNT_ID>"
+  default = "011CEB-4CEB96-CCFBBA"
 }
 
 # Organization ID. Set this to your GCP organization ID.
 variable "org_id" {
   description = "Organization ID"
-  default = "<ORG_ID>"
+  default = "1002281414910"
 }
 
 # Region for the subnets. Set this to the desired GCP region.
@@ -76,10 +76,10 @@ variable "subnet_2_name" {
 
 variable "subnet_1_cidr" {
   description = "The CIDR range for the first subnet"
-  default     = "sub01"
+  default     = "10.0.1.0/24"
 }
 
 variable "subnet_2_cidr" {
   description = "The CIDR range for the second subnet"
-  default     = "sub02"
+  default     = "10.0.2.0/24"
 }
